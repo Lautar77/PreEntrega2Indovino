@@ -1,0 +1,9 @@
+.container-fluid{
+    height: 75px;
+    padding: 15px 50px;
+
+    font-size: 25px;
+}
+.navbar-brand{
+    font-size: 25px;
+}
