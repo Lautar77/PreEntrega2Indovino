@@ -156,6 +156,67 @@ body{
 
 /* card fin */
 
+/* contenedor inicia */
+.contenedor{
+    height: 500px;
+    width: 100%;
+    background-color: #A5A4A6;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(3, 200px);
+    grid-template-areas: 
+    "img1 img2 img3"
+    "img1 img2 img3"
+    "img1 img2 img3";
+    padding: 30p;
+    grid-gap: 15px;
+}
+.item{
+    border: 3px solid white;
+    border-radius: 10px;
+    background-size: cover;
+    background-position: center;
+}
+.item:hover{
+    filter: grayscale(100%);
+    transform: scale(1.1);
+    transition: all 0.9s;
+}
+
+.item1{
+    grid-area: img1;
+    background-image: url(https://cdn.pixabay.com/photo/2020/08/18/05/46/barber-5497152_1280.jpg);
+}
+
+.item2{
+    grid-area: img2;
+    background-image: url(https://cdn.pixabay.com/photo/2018/02/22/17/08/barber-3173419_1280.jpg);
+    
+}
+
+.item3{
+    grid-area: img3;
+    background-image: url(https://cdn.pixabay.com/photo/2018/02/22/17/09/barber-shop-3173422_1280.jpg);
+}
+
+.contenedor h3{
+    text-align: center;
+    align-items: flex-end;
+    background-color: #6b767ead;
+    
+    padding: 5px;
+
+}
+
+/* contenedor fin */
+
+
+
+
+
+
+
+
 /* footer inicia */
 footer{
     background-color: grey;
