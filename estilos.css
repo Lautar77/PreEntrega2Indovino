@@ -50,6 +50,7 @@ h2{
     border-bottom: 0%;
     font-weight: bold;
 }
+/* inicio de nosotros */
 .nosotros{
     display: flex;
     box-sizing: border-box;
@@ -79,6 +80,33 @@ h2{
     padding-bottom: 0%;
     font-weight: bold;
 }
+/* fin de nosotros */
+
+/* inicio de ubicacion */
+.ubicacion{
+    display: flex;
+    box-sizing: border-box;
+    flex-wrap: wrap;
+}
+.izquierda{
+    display: flex;
+    box-sizing: border-box;
+    flex-wrap: wrap;
+}
+.derecha h3{
+    color: #000;
+    font-size: 30px;
+    margin-bottom: 1px;
+    padding-bottom: 0%;
+    font-weight: bold;
+    padding: 20px;
+    text-shadow: 0 0 10px #fff;
+}
+
+
+/* fin de ubicacion */
+
+
 
 .jumbotron{
     margin-top: 0% !important;
@@ -247,6 +275,13 @@ footer a{
     }
     .nosotros .nright{
         width: 55%;
+    }
+    .ubicacion .izquierdaz{
+        width: 45%;
+    }
+    .ubicacion .derecha{
+        width: 55%;
+        font-size: 35px;
     }
     *{
         box-sizing: border-box;
