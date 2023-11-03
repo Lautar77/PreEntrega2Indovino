@@ -56,7 +56,7 @@ h2{
     box-sizing: border-box;
     flex-wrap: wrap;
     margin: 0% !important;
-    
+
 }
 
 .nleft{
@@ -65,13 +65,13 @@ h2{
     height: 500px;
     background-size: cover;
     background-position: center;
-    
+
 }
 .nright{
     width: 100%;
     padding: 20px;
     background-color: #A5A4A6;
-    
+
 }
 .nright h3{
     color: #000;
@@ -106,7 +106,37 @@ h2{
 
 /* fin de ubicacion */
 
+/* contacto inicio */
+.contacto{
+    display: flex;
+    box-sizing: border-box;
+    flex-wrap: wrap;
+}
+.izq{
+    display: flex;
+    box-sizing: border-box;
+    flex-wrap: wrap;
+}
+.der h3{
+    color: #000;
+    font-size: 30px;
+    margin-bottom: 1px;
+    padding-bottom: 0%;
+    font-weight: bold;
+    padding: 20px;
+    text-shadow: 0 0 10px #fff;
+}
 
+
+
+/* contacto fin */
+
+form{
+    width: 100px;
+    height: 100px;
+}
+
+/* jumbotron inicia */
 
 .jumbotron{
     margin-top: 0% !important;
@@ -121,7 +151,10 @@ h1, .jumbotron p{
     border: 2px solid black;
     padding: 10px;
     text-shadow: 0 0 5px #000;
+    font-weight: 20px;
 }
+/* jumbotron fin */
+/* cuadrado inicia */
 .cuadrado{
     position: absolute;
     top: 450px;
@@ -137,7 +170,7 @@ h1, .jumbotron p{
     text-decoration: none;
     text-shadow: 0px 0px 5px #000;
 }
-
+/* cuadrado fin */
 body{
     background-color: #A5A4A6;
 }
@@ -152,12 +185,12 @@ body{
     background-color: #000;
     color: gray;
     padding: 20px;
-    
+
 }
 
 .card__img{
-    
-    
+
+
     /* background-position: center;
     background-size: cover; */
     background-color: #A5A4A6;
@@ -192,7 +225,7 @@ body{
     display: grid;
     grid-template-columns: repeat(3,1fr);
     grid-template-rows: repeat(3, 200px);
-    grid-template-areas: 
+    grid-template-areas:
     "img1 img2 img3"
     "img1 img2 img3"
     "img1 img2 img3";
@@ -219,7 +252,7 @@ body{
 .item2{
     grid-area: img2;
     background-image: url(https://cdn.pixabay.com/photo/2018/02/22/17/08/barber-3173419_1280.jpg);
-    
+
 }
 
 .item3{
@@ -231,7 +264,7 @@ body{
     text-align: center;
     align-items: flex-end;
     background-color: #6b767ead;
-    
+
     padding: 5px;
 
 }
@@ -275,11 +308,21 @@ footer a{
     }
     .nosotros .nright{
         width: 55%;
+        font-weight: 30px;
     }
     .ubicacion .izquierdaz{
         width: 45%;
     }
     .ubicacion .derecha{
+        width: 55%;
+        font-size: 35px;
+    }
+    .contacto .izq{
+        width: 45%;
+        padding: 20px;
+        
+    }
+    .contacto .der {
         width: 55%;
         font-size: 35px;
     }
@@ -292,7 +335,7 @@ footer a{
         display: flex;
         justify-content: space-evenly;
     }
-    
+
     .card{
         flex-direction: row;
         margin: 15px;
