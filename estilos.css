@@ -211,6 +211,34 @@ body {
 }
 
 /* contenedor fin */
+.contacto {
+  display: flex;
+  box-sizing: border-box;
+  flex-wrap: wrap;
+}
+.contacto .izq {
+  font-size: 25px;
+  box-sizing: border-box;
+  flex-wrap: wrap;
+  padding: 20px;
+  float: none;
+  margin-left: auto;
+  margin-right: auto;
+}
+.contacto .der h3 {
+  color: #000;
+  font-size: 30px;
+  margin-bottom: 1px;
+  padding-bottom: 0%;
+  font-weight: bold;
+  padding: 20px;
+  text-shadow: 0 0 10px #fff;
+}
+.contacto .der p {
+  padding: 20px;
+  font-size: 25px;
+}
+
 /* footer inicia */
 footer {
   background-color: grey;
@@ -260,6 +288,18 @@ footer a {
   .card {
     flex-direction: row;
     margin: 15px;
+  }
+  .contacto .izq {
+    width: 45%;
+    padding: 20px;
+    font-size: 25px;
+    float: none;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .contacto .der {
+    width: 55%;
+    font-size: 25px;
   }
 }
 /* fin medias queries */
