@@ -1,0 +1,315 @@
+@import url('https://fonts.googleapis.com/css2?family=Gabarito:wght@500&family=Montagu+Slab:opsz@16..144&family=Oswald:wght@600&display=swap');
+
+/* font-family: 'Gabarito', sans-serif;
+font-family: 'Montagu Slab', serif;
+font-family: 'Oswald', sans-serif; */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montagu Slab', serif;
+}
+
+/* navbar inicia */
+
+nav {
+    .container-fluid {
+        height: 75px;
+        padding: 15px 50px;
+        font-size: 25px;
+
+        a {
+            font-size: 25px;
+            color: #000 !important;
+            font-weight: bolder;
+
+            #collapsibleNavbar {
+                a {
+                    .nav-link {
+                        position: relative;
+                        z-index: 99 !important;
+                        color: #000;
+                        justify-content: space-evenly (2%);
+                        font-weight: bolder;
+                        background-color: #6b767ead;
+                    }
+                }
+            }
+        }
+    }
+}
+
+/* navbar fin */
+
+h2 {
+    text-align: center;
+    background-color: #A5A4A6;
+    color: #000;
+    text-shadow: 0 0 5px #fff;
+    padding: 20px;
+    background-color: #2B648C;
+    border-bottom: 0%;
+    font-weight: bold;
+}
+
+/* inicio de nosotros */
+.nosotros {
+    display: flex;
+    box-sizing: border-box;
+    flex-wrap: wrap;
+    margin: 0% !important;
+    .nleft {
+        width: 100%;
+        background-image: url(https://cdn.pixabay.com/photo/2023/09/15/04/25/clipper-8254064_1280.jpg);
+        height: 500px;
+        background-size: cover;
+        background-position: center;
+    }
+    .nright {
+        width: 100%;
+        padding: 20px;
+        background-color: #A5A4A6;
+        h3{
+            color: #000;
+            font-size: 25px;
+            margin-bottom: 1px;
+            padding-bottom: 0%;
+            font-weight: bold;
+        }
+    }
+}
+
+/* fin de nosotros */
+
+/* inicio de ubicacion */
+.ubicacion {
+    display: flex;
+    box-sizing: border-box;
+    flex-wrap: wrap;
+
+    .izquierda {
+        display: flex;
+        box-sizing: border-box;
+        flex-wrap: wrap;
+
+        .derecha h3 {
+            color: #000;
+            font-size: 30px;
+            margin-bottom: 1px;
+            padding-bottom: 0%;
+            font-weight: bold;
+            padding: 20px;
+            text-shadow: 0 0 10px #fff;
+        }
+    }
+}
+
+/* fin de ubicacion */
+
+
+
+.jumbotron {
+    margin-top: 0% !important;
+    background-image: url(https://cdn.pixabay.com/photo/2020/05/14/12/37/barber-5194406_1280.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+
+    .jumbotron p {
+        backdrop-filter: blur(2px);
+        border: 2px solid black;
+        padding: 10px;
+        text-shadow: 0 0 5px #000;
+    }
+}
+
+.cuadrado {
+    position: absolute;
+    top: 450px;
+    right: 50px;
+
+}
+
+.cuadrado a {
+    font-size: 25px;
+    color: #000;
+    background-color: #FFF6F2;
+    padding: 10px;
+    border-radius: 10px;
+    text-decoration: none;
+    text-shadow: 0px 0px 5px #000;
+}
+
+body {
+    background-color: #A5A4A6;
+}
+
+/* card inicia */
+.card {
+    display: grid;
+    place-items: center;
+    margin: auto;
+    margin-bottom: 10px;
+    width: 80%;
+    background-color: #000;
+    color: gray;
+    padding: 20px;
+}
+.card__img {
+        background-color: #A5A4A6;
+}
+.card img {
+        display: block;
+        max-width: 100%;
+        height: auto;
+}
+.card__title {
+        color: #2B648C;
+        font-size: 30px;
+}
+.card__boton {
+        color: black;
+        background-color: #2B648C;
+        text-decoration: none;
+        padding: 10px 20px;
+        border-radius: 5px;
+    }
+
+
+/* card fin */
+
+/* contenedor inicia */
+.contenedor {
+    height: 500px;
+    width: 100%;
+    background-color: #A5A4A6;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 200px);
+    grid-template-areas:
+        "img1 img2 img3"
+        "img1 img2 img3"
+        "img1 img2 img3";
+    padding: 30p;
+    grid-gap: 15px;
+}
+
+.item {
+    border: 3px solid white;
+    border-radius: 10px;
+    background-size: cover;
+    background-position: center;
+}
+
+.item:hover {
+    filter: grayscale(100%);
+    transform: scale(1.1);
+    transition: all 0.9s;
+}
+
+.item1 {
+    grid-area: img1;
+    background-image: url(https://cdn.pixabay.com/photo/2020/08/18/05/46/barber-5497152_1280.jpg);
+}
+
+.item2 {
+    grid-area: img2;
+    background-image: url(https://cdn.pixabay.com/photo/2018/02/22/17/08/barber-3173419_1280.jpg);
+
+}
+
+.item3 {
+    grid-area: img3;
+    background-image: url(https://cdn.pixabay.com/photo/2018/02/22/17/09/barber-shop-3173422_1280.jpg);
+}
+
+.contenedor h3 {
+    text-align: center;
+    align-items: flex-end;
+    background-color: #6b767ead;
+
+    padding: 5px;
+
+}
+
+/* contenedor fin */
+
+/* footer inicia */
+footer {
+    background-color: grey;
+    color: #000;
+    padding: 25px;
+}
+
+footer h3 {
+    text-align: start;
+    font-weight: bold;
+
+}
+
+footer a {
+    color: #FFF6F2;
+    background-color: grey;
+    font-size: 20px;
+    margin-top: 30px;
+    letter-spacing: 20px;
+    text-align: start;
+}
+
+/* footer fin */
+
+/* inician medias queries */
+
+@media only screen and (min-width:480px) {
+    .nosotros .nleft {
+        width: 45%;
+    }
+
+    .nosotros .nright {
+        width: 55%;
+    }
+
+    .ubicacion .izquierdaz {
+        width: 45%;
+    }
+
+    .ubicacion .derecha {
+        width: 55%;
+        font-size: 35px;
+    }
+
+    * {
+        box-sizing: border-box;
+        margin: 0%;
+        padding: 0%;
+    }
+
+    section {
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    .card {
+        flex-direction: row;
+        margin: 15px;
+    }
+}
+
+
+
+
+/* fin medias queries */
+
+
+
+
+
+
+
+
+
+.imagen2 {
+    height: 100px;
+    width: 100px;
+}
